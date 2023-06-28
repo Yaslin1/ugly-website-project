@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/styles/style.css">
+    <meta property="og:image" content="https://ugly-website-c11-yc.web.app/images/meta-image.png">
+    <title>Ugly Christmas</title>
+</head>
+<body class="seizure">
+    <main id="header">
+        <h1>Ugly Christmas Sweater</h1>
+    </main>
+    <nav>
+        <ul class="nav-bar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#sweaters">Sweaters</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </nav>
+    <div class="allchris">
+    <section id="about">
+        <p>Once upon a time, in a land of pixelated snowflakes and blinking reindeer, there was a group of web developers who embarked on a mission to create the ugliest Christmas website ever known. They gathered around their keyboards, fueled by peppermint mochas and holiday spirit, ready to unleash their creative madness upon the digital realm.
+            The homepage of their website was adorned with flashing lights, garlands that seemed to grow in size with each refresh, and an animated Santa Claus doing the floss dance. As users scrolled down, they were greeted by a chorus of singing elves, their high-pitched voices echoing through the speakers.
+            The navigation menu was a sight to behold. It consisted of bouncing candy canes that changed color on hover, and each menu item was accompanied by a burst of confetti. Clicking on "About Us" led visitors to a page where the developers had transformed themselves into animated Christmas characters, complete with elf hats and reindeer antlers.
+            The site's background was a chaotic mix of swirling snowflakes, gingerbread houses, and flying presents. The text content was wrapped in colorful borders that pulsated with the beat of a cheerful holiday tune. And hidden among the paragraphs were secret links that revealed virtual gifts when clicked.
+            Every element of the website was designed to be as delightfully tacky as possible. There were animated snow globes, falling snowflakes that followed the mouse cursor, and a countdown clock that eagerly ticked down the days, hours, and seconds until Christmas morning.
+            Despite its unconventional appearance, the website brought joy and laughter to all who stumbled upon it. It served as a reminder that the holiday season is a time for whimsy and merriment, where even the quirkiest of designs can spark a festive spirit.
+            And so, the web developers celebrated their success, their ugly Christmas website spreading cheer across the digital landscape. They raised their virtual eggnog-filled mugs and toasted to the power of creativity, laughter, and the joy of the holiday season.
+            May your own HTML site be filled with the same festive spirit, spreading smiles and warmth to all who visit. Happy coding, and a very merry ugly Christmas to you!</p>
+    </section>
+    <img id="tree" src= "images/chris-tree2.gif" alt="tree">
+    <img id="tree" src= "images/chris-tree2.gif" alt="tree">
+    <img id="tree" src= "images/chris-tree2.gif" alt="tree">
+    <img id="tree" src= "images/chris-tree2.gif" alt="tree">
+
+    <section id="sweaters">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur natus quibusdam vero accusamus unde, itaque alias dolor dolorum hic illum, suscipit nobis cumque? Quibusdam beatae quos deserunt perferendis eligendi labore?</p>
+    </section>
+    <section id="contact">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ut officiis architecto repellendus doloribus delectus quia iusto culpa. Vitae placeat nesciunt ad magni id laboriosam nam quia cum optio maiores!</p>
+    </section>
+</div>
+    <footer>
+        <p><script>document.write(new Date())</script>; &copy;</p>
+
+    </footer>
+
+    <script>
+        const body =document.querySelector("body")
+        setInterval(() => {
+            body.classList[0] === 'seizure'
+            ? body.setAttribute("class", "")
+            : body.setAttribute("class", "seizure");
+        }, 200)
+
+        setInterval(() => {
+            const res = confirm("Are you still watching?");
+            res && document.write("<marquee>Get a life </marquee>");
+        },5000)
+
+        setInterval(() => {
+            location.reload();
+        },8000)
+
+
+        body.addEventListener("scroll", function () {
+            if (body.scrollTop % 10 === 0) {
+                body.classList[0] === 'seizure'
+                    ? body.setAttribute("class", "")
+                    : body.setAttribute("class","seizure")
+            }
+        })
+    </script>
+</body>
+</html>

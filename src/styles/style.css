@@ -1,0 +1,142 @@
+  @import url('https://fonts.googleapis.com/css2?family=Kablammo&family=Monoton&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Rubik+Iso&family=Rubik+Pixels&family=Tilt+Prism&display=swap');
+
+/* RESET CSS */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+* {
+    margin:0;
+    padding:0;
+}
+
+#home {
+    background-image: url(../../images/bg3.avif);
+}
+.nav-bar {
+    display: flex;
+    list-style: none;
+
+}
+
+.seizure {
+    filter:invert(200%);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    } 
+    to {
+        transform: rotate(360deg);   
+    }
+}
+
+#tree { 
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    transform: rotate(180deg);
+    background-color: aqua;
+    width: 500px;
+    height: 500px;
+}
+
+#tree:hover {
+    animation: spin 0.2s linear infinite;
+}
+
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+    min-height: 100vh;
+}
+
+.allchris {
+    flex-direction: row-reverse;
+}
+
+main {
+    color:greenyellow;
+}
+
+#header {
+    background-image: url("/images/chris1.jpeg");
+    min-height: 20vh;
+    font-family: 'Kablammo', cursive;
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.nav-bar {
+    background-image: url("/images/bg3.avif");
+    min-height: 50vh;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+} 
+
+  nav ul {
+      display: flex;
+
+  }
+
+  nav ul li a {
+      padding: 10px;
+      background-color: pink;
+      color: white;
+      text-decoration: none;
+
+  }
+
+  nav ul li a:hover {
+      background-color: rgb(241, 168, 192);
+      text-decoration: underline;
+      border-radius: 13px;
+  }
+
+  #record .flex-container>div {
+      background-color: lightgrey;
+      border: 1px solid black;
+
+  }
+#about {
+    background-image: url("/images/chris-tree3.gif");
+    min-height: 50vh;
+    font-family: 'Monoton', cursive;
+    color: yellow;
+    background-color: red;
+}
+
+#sweaters{
+    background-image: url("/images/chris5.webp");
+    height: 20%;
+    min-height: 50vh;
+    font-family: 'Rubik Iso', cursive;
+    color: white;
+}
+
+#contact {
+    background-image: url("/images/chrisdance1.gif");
+    height: 20%;
+    min-height: 50vh;
+    background-size: 80px;
+    font-family: 'Roboto Mono', monospace;
+    color: orangered;
+}
+
+footer {
+    background-image: url("/images/chris1.jpeg");
+    min-height: 60vh;
+    font-family: 'Rubik Pixels', cursive;
+}
